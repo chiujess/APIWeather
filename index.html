@@ -49,7 +49,7 @@
 			else {
 				unit = "imperial";
 			}
-			let query = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&APPID=" + YourWeatherAppID + "&units=" + unit;
+			let query = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&APPID=" + YourWeatherAppID + "&units=" + unit;
       console.log("Query is :" + query)
       $.getJSON(query,function(json){
 				console.log(JSON.stringify(json));
